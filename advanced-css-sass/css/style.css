@@ -46,21 +46,27 @@ body {
 
 .logo {
   height: 35px;
+  backface-visibility: hidden;
 }
 
+.logo:hover {
+  animation: upDown 2s ease-in;
+}
 
 .text-box {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%);
   /* top and left begin the text box at x% of the parent element which puts us too far to the right and bottom so transform translate helps us deduct 50% of the text box measurements from our top and left so that the element itself no matter its size will fit in a centered position */
+  text-align: center;
+
 }
 
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
-
+  margin-bottom: 60px;
   backface-visibility: hidden;
   /* hack to fix shaking that can occur during animation */
 }
@@ -126,4 +132,94 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+@keyframes moveInBottom {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateY(50px)
+  }
+
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(10px);
+  }
+
+  25% {
+    transform: translateY(-10px)
+  }
+
+  75% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+/* below overrides the default state of btns which change color if visited */
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  /* keeps btn from overlapping text above */
+  border-radius: 100px;
+  transition: all .2s;
+  /* opens transition animations for all properties */
+  position: relative;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+}
+
+/* active -> when clicked */
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0, 5px, 10px, rgba(0, 0, 0, .2)
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
+}
+
+/* adds an elem that looks exactly like our btn but is hidden behind and becomes visible and invisible on command - treated like a child elem*/
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards;
 }
