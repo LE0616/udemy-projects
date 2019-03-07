@@ -1,0 +1,68 @@
+
+/* Header Annimation */
+@keyframes moveInLeft {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem)
+  }
+
+  80% {
+    transform: translateX(1rem)
+  }
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateX(10rem)
+  }
+
+  80% {
+    transform: translateX(-1rem);
+    /* transform: rotate(180deg) */
+  }
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  /* start */
+  0% {
+    opacity: 0;
+    transform: translateY(5rem)
+  }
+
+  /* finish */
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes upDown {
+  0% {
+    transform: translateY(1rem);
+  }
+
+  25% {
+    transform: translateY(-1rem)
+  }
+
+  75% {
+    transform: translateY(1rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
