@@ -39,6 +39,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+
   /* adds an elem that looks exactly like our btn but is hidden behind and becomes visible and invisible on command - treated like a child elem*/
   &::after {
     content: "";
