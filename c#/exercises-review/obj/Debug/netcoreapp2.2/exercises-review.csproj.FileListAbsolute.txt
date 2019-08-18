@@ -1,0 +1,11 @@
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\obj\Debug\netcoreapp2.2\exercises-review.csprojAssemblyReference.cache
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\obj\Debug\netcoreapp2.2\exercises-review.csproj.CoreCompileInputs.cache
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\obj\Debug\netcoreapp2.2\exercises-review.AssemblyInfoInputs.cache
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\obj\Debug\netcoreapp2.2\exercises-review.AssemblyInfo.cs
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\bin\Debug\netcoreapp2.2\exercises-review.deps.json
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\bin\Debug\netcoreapp2.2\exercises-review.runtimeconfig.json
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\bin\Debug\netcoreapp2.2\exercises-review.runtimeconfig.dev.json
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\bin\Debug\netcoreapp2.2\exercises-review.dll
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\bin\Debug\netcoreapp2.2\exercises-review.pdb
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\obj\Debug\netcoreapp2.2\exercises-review.dll
+C:\Users\lm616\Desktop\CodingProjects\Udemy\udemy-projects\c#\exercises-review\exercises-review\obj\Debug\netcoreapp2.2\exercises-review.pdb
