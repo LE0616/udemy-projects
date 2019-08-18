@@ -1,6 +1,6 @@
 using System;
 
-namespace CSharp1Exercises.ControlFlow
+namespace exercises_review
 {
   public class Loops
   {
@@ -17,26 +17,45 @@ namespace CSharp1Exercises.ControlFlow
       }
     public void Ex2()
       {
-        Console.Write("Enter a number or OK to exit: ");
-        var input = Console.Read();
 
-        // if input is an intager add to sum
-        // if OK exit
-        // else
-        Console.WriteLine("Input is invalid");
+        var sum = 0;
+
+        while (true)
+        {
+          Console.Write("Enter a number or OK to exit: ");
+          var input = Console.ReadLine();
+
+          if (input == "OK" || input == "ok") //input.ToLower() == "ok"
+          {
+            break;
+          }
+
+          sum += Convert.ToInt32(input);
+        }
+
+        Console.WriteLine("Sum of all number is: " + sum);
       }
     public void Ex3()
       {
+        Console.Write("Enter a number: ");
+        var input = Convert.ToInt32(Console.ReadLine());
 
-      }
-    public void Ex4()
-      {
+        var factorial = 1;
+        for (var i = input; i <= 1; i--)
+        {
+          factorial *= i;
+        }
 
+        Console.WriteLine("{0}! = {1}", input, factorial);
       }
-    public void Ex5()
-      {
+    // public void Ex4()
+    //   {
 
-      }
+    //   }
+    // public void Ex5()
+    //   {
+
+    //   }
 
   }
 }
